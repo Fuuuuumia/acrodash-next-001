@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import Button from "@/components/Button/Button";
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -12,6 +14,11 @@ export default function Home() {
           width={180}
           height={38}
           priority
+        />
+
+        <Button 
+          label="Click Me"
+          onClick={() => alert('Button Clicked!')}
         />
         <ol>
           <li>
