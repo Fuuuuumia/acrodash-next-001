@@ -1,0 +1,61 @@
+.header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #0070f3;
+}
+
+/* モバイル用 */
+.menuButton {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .menuButton {
+    display: block;
+  }
+}
