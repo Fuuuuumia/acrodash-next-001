@@ -7,7 +7,11 @@ type ButtonProps = {
 
 export default function Button({ label, onClick }: ButtonProps) {
   return (
-    <button onClick={onClick} className={styles.button}>
+    <button 
+      className={styles.button}
+      onClick={onClick} 
+    >
+      
       {label}
     </button>
   );

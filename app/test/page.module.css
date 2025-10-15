@@ -1,9 +1,4 @@
-
 .page {
-  /* Lightモードのデフォルト設定 */
-  --background: #ffffff;
-  --foreground: #000000;
-
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -19,29 +14,16 @@
   padding: 80px;
   gap: 64px;
   font-family: var(--font-geist-sans);
-  background-color: var(--background);
-  color: var(--foreground);
 }
 
-/* ダークモード用設定 */
 @media (prefers-color-scheme: dark) {
   .page {
-    --background: #000000;
-    --foreground: #ffffff;
-
     --gray-rgb: 255, 255, 255;
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
     --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
 
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
-
-    background-color: var(--background);
-    color: var(--foreground);
-  }
-
-  .logo {
-    filter: invert();
   }
 }
 
@@ -175,5 +157,11 @@ a.secondary {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
   }
 }
