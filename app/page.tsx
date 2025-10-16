@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import Button from "@/components/Button/Button";
-import SignBox from "@/components/SignBox/SignBox";
+import SignInBox from "@/components/SignInBox/SignInBox";
 import { signOut } from "next-auth/react";
 import { routerServerGlobal } from "next/dist/server/lib/router-utils/router-server-context";
 import { useRouter } from "next/navigation";  
@@ -23,7 +23,7 @@ export default function Home() {
 
         />
         
-        <SignBox />
+        <SignInBox />
         <ol>
           <li>
             Get started by editing <code>app/page.tsx</code>.

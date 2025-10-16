@@ -1,12 +1,12 @@
 'use client';
 
 import React from 'react';
-import styles from './SignBox.module.css';
+import styles from './SignInBox.module.css';
 import { signIn } from 'next-auth/react';
 
-export default function SignBox() {
+export default function SignInBox() {
   return (
-    <div className={styles.signBox}>
+    <div className={styles.SignInBox}>
       <h2 className={styles.title}>Sign in to your account</h2>
 
       <div className={styles.buttons}>
