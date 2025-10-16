@@ -19,13 +19,6 @@ export default function SignInBox() {
           Sign in with Google
         </button>
 
-        <button 
-          className={`${styles.button} ${styles.github}`}
-          onClick={() => signIn('github')}
-        >
-          <img src="/icons/github.svg" alt="GitHub icon" className={styles.icon} />
-          Sign in with GitHub
-        </button>
       </div>
     </div>
   );
