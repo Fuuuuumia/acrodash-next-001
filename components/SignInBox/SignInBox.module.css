@@ -1,4 +1,4 @@
-.signBox {
+.signInBox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,15 +57,7 @@
   background-color: #25663a;
 }
 
-/* GitHubボタン（黒） */
-.github {
-  background-color: #474747;
-  color: white;
-}
 
-.github:hover {
-  background-color: #24282c;
-}
 
 /* アイコンサイズ */
 .icon {
